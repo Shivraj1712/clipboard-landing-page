@@ -224,7 +224,7 @@ body{
     width: 100%;
     padding: 50px 0 50px 10px;
     display: grid;
-    grid-template-columns: repeat(5,18%);
+    grid-template-columns: repeat(5,15%);
     justify-content: space-around;
     align-items: center;
     margin: 30px 0;
@@ -551,3 +551,4 @@ footer .footerright a :hover{
         width: 150px;
     }
 }
+
