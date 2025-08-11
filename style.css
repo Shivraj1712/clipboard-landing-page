@@ -4,7 +4,9 @@
     font-family: 'Poppins',sans-serif;
     box-sizing: border-box;
 }
-@import url(https://fonts.google.com/specimen/Bai+Jamjuree);
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
 body{
     background-image: url(bg-header-desktop.png);
     background-repeat: no-repeat;
@@ -124,7 +126,7 @@ body{
     font-size: 1.5rem;
     color: hsl(210, 10%, 33%);
     font-weight: 600;
-    font-family: 'Bin Jamjuree',sans-serif;
+    font-family: 'Bai Jamjuree',sans-serif;
     line-height: 35px;
 }
 .details-card p{
@@ -225,7 +227,7 @@ body{
     padding: 50px 0 ;
     display: grid;
     grid-template-columns: repeat(5,15%);
-    justify-content: center
+    justify-content: center;
     align-items: center;
     margin: 30px 0;
 }
@@ -551,6 +553,7 @@ footer .footerright a :hover{
         width: 150px;
     }
 }
+
 
 
 
