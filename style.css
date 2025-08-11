@@ -1,0 +1,528 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+@import url(https://fonts.google.com/specimen/Bai+Jamjuree);
+body{
+    background-image: url(bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding-top: 100px;
+    display: flex;
+    height: 400px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size: 18px;
+    text-align: center;
+}
+.container h1{
+    font-weight: 600;
+    font-family: 'Bai Jamjuree',sans-serif;
+    font-size: 3rem;
+    color:  hsl(210, 10%, 33%);
+}
+.container p{
+    font-weight: 400;
+    color: hsl(201, 11%, 66%);
+    font-family: 'Bai Jamjuree' , sans-serif;
+    line-height: 25px;
+}
+.container-bottom{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2,1.5fr);
+    align-items: center;
+    justify-content: space-between;
+}
+.container .iosdown{
+    width:90%;
+    background-color: hsl(171, 66%, 44%);
+    color: white;
+    font-size: 18px;
+    padding:10px 12px;
+    border: 4px hsl(171, 98%, 44%);
+    border-bottom:2px hsl(171, 98%, 18%) solid;
+    border-radius: 30px;
+    grid-column:1/2 ;
+}
+.container .iosdown:hover, .container .anddown:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.container .anddown{
+    width:90%;
+    background-color: hsl(233, 100%, 69%);
+    color: white;
+    font-size: 18px;
+    padding:10px 12px;
+    border: 4px hsl(233, 60%, 46%);
+    border-bottom:2px hsl(233, 60%, 46%) solid;
+    border-radius: 30px;
+    grid-column: 2/3;
+}
+
+.keeptracksec{
+    padding: 20px 0;
+    width: 100%;
+    height: 120vh;
+    display: grid;
+    grid-template-rows: repeat(2,350px);
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.tracktop{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding:10px 0;
+}
+.tracktop h2{
+    color:  hsl(210, 10%, 33%);
+    font-size: 2rem;
+    font-weight: 600;
+}
+.tracktop p{
+    line-height: 25px;
+    color: hsl(201, 11%, 66%);
+    font-weight: 400;
+    font-size: 18px;
+}
+.devices img{
+    width:75%;
+    height:360px;
+}
+.trackmain{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+}
+.details-card{
+    height: 120px;
+    width: 450px;
+    display: grid;
+    grid-template-rows: repeat(3,33%);
+    text-align: start;
+}
+.details-card h3{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-size: 1.5rem;
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+    font-family: 'Bin Jamjuree',sans-serif;
+    line-height: 35px;
+}
+.details-card p{
+    line-height: 30px;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    font-weight: 400;
+    color: hsl(201, 11%, 66%);
+}
+.access{
+    margin-top: 80px;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.access img{
+    height: 400px;
+    width: 60%;
+}
+.accesstop{
+    height:70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.accesstop h2{
+    color: hsl(210, 10%, 33%);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.accesstop p{
+    color: hsl(201, 11%, 66%);
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.workflow{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.workflowtop{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.workflowtop h2{
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+.workflowtop p{
+    color: hsl(201, 11%, 66%);
+    font-weight: 400;
+    font-size: 18px;
+}
+.workflowbottom{
+    width: 100%;
+    padding: 10px 30px;
+    display: grid;
+    grid-template-columns: repeat(3,23%);
+    align-items: center;
+    justify-content: space-around;
+}
+.wfcard{
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+}
+.wfcard h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: hsl(210, 10%, 33%);
+}
+.wfcard p{
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(201, 11%, 66%);
+    line-height: 30px;
+}
+.companies{
+    width: 100%;
+    padding: 50px 0 50px 10px;
+    display: grid;
+    grid-template-columns: repeat(5,18%);
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0;
+}
+.companies figure img{
+    height: 60px;
+    width: 75%;
+}
+.download{
+    margin: 40px 0;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.download .container-bottom{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2,1.5fr);
+    align-items: center;
+    justify-content: space-between;    
+}
+.download .container-bottom .iosdown{
+    width:90%;
+    background-color: hsl(171, 66%, 44%);
+    color: white;
+    font-size: 18px;
+    padding:10px 12px;
+    border: 4px hsl(171, 98%, 44%);
+    border-bottom:2px hsl(171, 98%, 18%) solid;
+    border-radius: 30px;
+    grid-column:1/2 ;    
+}
+.download .container-bottom .anddown{
+    width:90%;
+    background-color: hsl(233, 100%, 69%);
+    color: white;
+    font-size: 18px;
+    padding:10px 12px;
+    border: 4px hsl(233, 60%, 46%);
+    border-bottom:2px hsl(233, 60%, 46%) solid;
+    border-radius: 30px;
+    grid-column: 2/3;    
+}
+
+.download .container-bottom .iosdown:hover, .download .container-bottom .anddown:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.download h2{
+    color: hsl(210, 10%, 33%);
+    font-size:2rem ;
+    font-weight: 600;
+}
+.download p{
+    color: hsl(201, 11%, 66%);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+footer{
+    height: 150px;
+    width: 100%;
+    background-color: hsla(210, 8%, 90%, 0.486);
+    display: grid;
+    grid-template-columns: repeat(6,15%);
+    justify-content: space-around;
+    align-items: center;
+}
+footer figure {
+    grid-column: 2/3;
+    align-self: center;
+}
+footer figure img{
+    height: 80px;
+    width: 80px;
+}
+footer .footercenter{
+    height: 60%;
+    grid-column: 3/6;
+    display: grid;
+    grid-template-columns: repeat(3,18%);
+    grid-template-rows: repeat(2,45%);
+    align-items: center;
+    text-align: start;
+    grid-column-gap: 5%;
+    grid-row-gap: 5%;
+}
+footer .footercenter a h4{
+    font-size: 14px;
+    color: hsl(201, 11%, 66%);
+}
+footer .footercenter a{
+    text-decoration: none;
+}
+footer .footerright{
+    grid-column:6/7 ;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+footer .footerright a :hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+
+/* Media Query section */
+@media only screen and (max-width:480px){
+    body{
+        background-image: url(bg-header-mobile.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .container{
+        width: 100%;
+    }
+    .container img{
+        height: 100px;
+        width: 100px;
+    }
+    .container h1{
+        font-size: larger;
+        width: 90%;
+    }
+    .container p{
+        font-size: 14px;
+        width: 90%;
+    }
+    .container-bottom{
+        display: grid;
+        grid-template-rows: repeat(2,1.4fr);
+        row-gap: 6px;
+    }
+    .container-bottom .iosdown{
+        font-size: 60%;
+        grid-row: 1/2;
+        grid-column: 1/3;
+        width: 100% ;
+    }
+    .container-bottom .anddown{
+        font-size: 60%;
+        grid-row: 2/3;
+        grid-column: 1/3;
+        width: 100%;
+    }
+    .keeptracksec{
+        grid-template-rows: repeat(4,30vh);
+        grid-template-columns: repeat(1,100%);
+        text-align: center;
+        align-items: center;
+        margin-bottom: 0;
+    }
+    .tracktop{
+        grid-row: 1/2;
+    }
+    .tracktop h2{
+        font-size: larger;
+    }
+    .tracktop p{
+        font-size: 13px;
+        width: 90%;
+    }
+    .trackmain{
+        grid-template-columns: repeat(1,100%);
+        grid-row: 2/4;
+    }
+    .trackmain .devices img{
+        height: 180px;
+        width: 180px;
+    }
+    .details{
+        grid-template-rows: repeat(3,30%);
+    }
+    .details-card{
+        margin: 0 10px;
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+    }
+    .details-card p{
+        width: 90%;
+        text-align: center;
+    }
+    .access{
+        margin-top: 0;
+        height: 80%;
+    }
+    .access img{
+        height: 225px;
+        width: 225px;
+    }
+    .accesstop h2{
+        font-size: larger;
+    }
+    .accesstop p{
+        font-size: 11.5px;
+        padding: 0 10px;
+    }
+    .workflow{
+        height: 700px;
+    }
+    .workflowtop{
+        height: 80px;
+    }
+    .workflowtop h2{
+        font-size: larger;
+    }
+    .workflowtop p{
+        font-size: 12px;
+    }
+    .workflowbottom{
+        padding: 0;
+        grid-template-columns: repeat(1,100%);
+        grid-template-rows: repeat(3,180px);
+        align-items: center;
+        justify-content: space-around;
+    }
+    .wfcard h3{
+        font-size: large;
+    }
+    .wfcard p{
+        font-size: 12px;
+        line-height: 15px;
+        width: 300px;
+    }
+    .wfcard img{
+        height: 30px;
+        width: 30px;
+    }
+    .companies{
+        height: 600px;
+        width: 100%;
+        grid-template-rows: repeat(5,120px);
+        align-items: center;
+        padding: 0;
+    }
+    .companies figure{
+        grid-column:2/5 ;
+        width: 100%;
+        align-items: center;
+    }
+    .companies figure img{
+        height: 60px;
+        padding: 0;
+    }
+    .download{
+        height: 300px;
+    }
+    .download h2{
+        font-size: large;
+    }.download p{
+        font-size: 12px;
+        width: 90%;
+    }
+    .download .container-bottom{
+        display: grid;
+        grid-template-rows: repeat(2,1.4fr);
+        row-gap: 6px;
+    }
+    .download .container-bottom .iosdown{
+        font-size: 60%;
+        grid-row: 1/2;
+        grid-column: 1/3;
+        width: 100% ;
+    }
+    .download .container-bottom .anddown{
+        font-size: 60%;
+        grid-row: 2/3;
+        grid-column: 1/3;
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+        height: 420px;
+        grid-template-columns: none;
+        grid-template-rows: 80px 250px 40px;
+        align-items: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    footer figure img{
+        height: 70px;
+        width: 70px;
+        grid-row: 1/2;
+        grid-column: 3/5;
+        grid-template-columns: none;
+    }
+    footer .footercenter{
+        grid-row: 2/3;
+        grid-template-columns: none;
+        grid-template-rows: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    footer .footerright{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 150px;
+    }
+}
